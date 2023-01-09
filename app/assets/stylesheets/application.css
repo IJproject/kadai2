@@ -63,7 +63,7 @@ th, td {
 
 .show-item1, .show-item2 {
   display: flex;
-  margin-left: 64px; 
+  margin-left: 32px; 
 }
 
 .show-item1 {
@@ -75,10 +75,11 @@ th, td {
   margin-bottom: 28px;
 }
 
-.show-link {
-  margin-left: 32px;
+.edit {
+  margin-top: 28px;
+  margin-bottom: 16px;
 }
 
-.edit {
-  
+.edit-item, .edit-link {
+  margin-bottom: 12px;
 }
