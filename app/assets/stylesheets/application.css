@@ -18,7 +18,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: verdana, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+  color: black;
 }
 
 .container {
@@ -29,10 +30,32 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 .top-sentence {
   margin: 24px;
 }
 
 .top-sentence p {
   margin-bottom: 24px;
+}
+
+table {
+  margin: 8px;
+  margin-bottom: 16px;
+}
+
+.new {
+  margin: 4px;
+  margin-top: 16px;
+}
+
+.new-submit {
+  margin-top: 8px;
+}
+
+th, td {
+  padding: 4px;
 }
