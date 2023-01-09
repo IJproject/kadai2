@@ -4,15 +4,16 @@
     <tr>
       <th>Title</th>
       <th>Body</th>
-      <th>g</th>
+      <th></th>
     </tr>
     <% @books.each do |book| %>
     <tr>
       <td><%= book.title %></td>
       <td><%= book.body %></td>
       <td>
-        <%= link_to "Show", '/books/#{book.id}' %>
-        <%= link_to "Edit", '/books/edit' %>
+        <%= link_to "Show", "/books/#{book.id}" %>
+        <%= link_to "Edit", "/books/#{book.id}/edit" %>
+        <%= link_to "Destroy", "/books/#{book.id}/destory" %>
       </td>
     </tr>
     <% end %>

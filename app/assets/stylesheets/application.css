@@ -24,6 +24,7 @@
 
 .container {
   margin: 30px;
+  width: 100%;
 }
 
 h1 {
@@ -58,4 +59,26 @@ table {
 
 th, td {
   padding: 4px;
+}
+
+.show-item1, .show-item2 {
+  display: flex;
+  margin-left: 64px; 
+}
+
+.show-item1 {
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.show-item2 {
+  margin-bottom: 28px;
+}
+
+.show-link {
+  margin-left: 32px;
+}
+
+.edit {
+  
 }
