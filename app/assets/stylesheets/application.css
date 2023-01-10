@@ -93,6 +93,18 @@ th, td {
   margin-bottom: 28px;
 }
 
-.frash-error {
-  
+.border-red {
+  margin-top: 16px;
+  border: red 1px solid;
+  width: 960px;
+}
+
+.back-red {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.error {
+  padding: 16px 64px 32px;
 }

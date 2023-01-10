@@ -1,5 +1,18 @@
 <div class="container">
   <h1 class="edit">Editing Book</h1>
+  <% if @book.errors.any? %>
+    <div class="border-red">
+      <div class="back-red">
+        <%= @book.errors.count %>
+        error prohibited this book from being saved:
+      </div>
+　    <ul class="error">
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <%= form_with model: @book, url: "/books/#{@book.id}", method: :patch do |f| %>
     <div class="edit-item">
       <p>Title</p>

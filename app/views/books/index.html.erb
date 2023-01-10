@@ -23,10 +23,20 @@
   </table>
 
   <h2>New book</h2>
-　<ul class="flash-message flash-error">
-    <li><%= flash[:hoge] %></li>
-  </ul>
-  <%= form_with model: Book.new, url: '/books', method: :post do |f| %>
+  <% if @book.errors.any? %>
+    <div class="border-red">
+      <div class="back-red">
+        <%= @book.errors.count %>
+        error prohibited this book from being saved:
+      </div>
+　    <ul class="error">
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= form_with model: @book, url: '/books', method: :post do |f| %>
     <p class="new">Title</p>
     <%= f.text_field :title %>
     

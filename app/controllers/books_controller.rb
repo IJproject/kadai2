@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   def index
     @books = Book.all 
+    @book = Book.new
   end
   
   def create 
@@ -9,8 +10,8 @@ class BooksController < ApplicationController
       redirect_to "/books/#{@book.id}"
       flash[:notice] = "Book was successfully created."
     else
-      redirect_to "/books"
-      flash[:hoge] = "Book was successfully updated."
+      @books = Book.all 
+      render :index
     end
   end
 
@@ -28,7 +29,8 @@ class BooksController < ApplicationController
       redirect_to "/books/#{book.id}"
       flash[:notice] = "Book was successfully updated."
     else
-      redirect_to "/books/#{book.id}/edit"
+      render :edit
+      # redirect_to "/books/#{@updated_book.id}/edit"
     end
   end
   
