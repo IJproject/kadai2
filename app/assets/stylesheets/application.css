@@ -83,3 +83,16 @@ th, td {
 .edit-item, .edit-link {
   margin-bottom: 12px;
 }
+
+.flash-message {
+  color: green;
+  margin-left: 32px; 
+}
+
+.flash-margin {
+  margin-bottom: 28px;
+}
+
+.frash-error {
+  
+}
