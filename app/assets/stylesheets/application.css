@@ -110,3 +110,8 @@ th, td {
 .error {
   padding: 16px 64px 32px;
 }
+
+.nav-link:hover {
+  background-color: black;
+  color: white;
+}
