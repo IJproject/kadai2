@@ -48,7 +48,7 @@ table {
   margin-bottom: 16px;
 }
 
-.new {
+.new, .edit-item {
   margin: 4px;
   margin-top: 16px;
 }
@@ -95,11 +95,13 @@ th, td {
 
 .border-red {
   margin-top: 16px;
-  border: red 1px solid;
-  width: 960px;
+  border: red 2px solid;
+  width: 450px;
 }
 
 .back-red {
+  padding: 5px;
+  padding-left: 15px;
   background-color: red;
   color: white;
   font-weight: bold;
